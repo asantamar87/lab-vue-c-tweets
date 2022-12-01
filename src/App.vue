@@ -1,6 +1,8 @@
 <template>
   <div class="app">
-    <Tweet />
+    <!-- <Tweet :tweet="tweets[0]"/> -->
+    <Tweet v-for="(tweetArr,index) in tweets" :key="index" :tweet="tweetArr"/>
+    <!-- Se puede hacer un for -->
   </div>
 </template>
 
